@@ -45,8 +45,17 @@ variable "architect" {
 ###
 variable "parent_directory_id" {
   type        = string
-  description = "Defines the id of the parent direcrory."
+  description = "Defines the id of the parent directory."
 }
+
+###
+# Usage of the subaccount
+###
+variable "usage" {
+  type        = string
+  description = "Defines the usage pattern of the subaccount."
+}
+
 
 ###
 # Email address of the costreference

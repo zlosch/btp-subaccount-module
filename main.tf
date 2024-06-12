@@ -21,7 +21,7 @@ resource "btp_subaccount" "project" {
     "owner" : ["${var.owner}"],
     "team" : ["${var.team}"]
   }
-  usage = "USED_FOR_PRODUCTION"
+  usage = var.usage
 
   parent_id = var.parent_directory_id
 }
